@@ -1,0 +1,30 @@
+.textBg{
+    padding-top: 130px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid black;
+}
+.paraline{
+    margin-top: 22px;
+    font-size: 19px;
+}
+#paraId h4{
+
+ opacity: .6;
+   
+
+}
+#text-row{
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    #paraId{
+        width: 100%;
+        padding: 10px 70px;
+        
+
+    }
+    #paraId p{
+       line-break: loose;
+    }
+}
