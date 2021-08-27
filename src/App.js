@@ -1,26 +1,27 @@
-import { BrowserRouter as Router, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import Overview from './pages/Overview';
+import Sidebar from './components/Sidebar';
 import Footer from './components/Footer/Footer';
-import InterGate from './interGatePages/InterGate';
-import Navbar2 from './components-2/Navbar2/Navbar2';
+import { Reports, ReportsOne, ReportsTwo, ReportsThree } from './pages/Reports';
+import Connection from './Connection';
+
 
 function App() {
   return (
-    <>
-    
-    
     <Router>
-     <Navbar2 />
+      <Sidebar />
       <Switch>
-    
+        <Route path='/overview' exact component={Overview} />
+        <Route path='/reports' exact component={Reports} />
+        <Route path='/reports/reports1' exact component={ReportsOne} />
+        <Route path='/reports/reports2' exact component={ReportsTwo} />
+        <Route path='/reports/reports3' exact component={ReportsThree} />
+        <Connection />
+  
       </Switch>
-     
+      <Footer/>
     </Router>
-    
-    
-    
-    </>
   );
 }
 

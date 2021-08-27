@@ -1,3 +1,5 @@
-.hgvc{
-    margin-top: 500px;
+.Footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
